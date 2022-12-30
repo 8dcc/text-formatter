@@ -3,7 +3,7 @@ CC=gcc
 CFLAGS=-Wall -Wextra
 BIN=text-formatter
 
-.PHONY: all clean
+.PHONY: all run clean install uninstall
 
 all: $(BIN)
 
@@ -12,6 +12,12 @@ run: $(BIN)
 
 clean:
 	rm $(BIN)
+
+install: $(BIN)
+	install --mode=0755 $< /usr/local/bin/$<
+
+uninstall:
+	rm -f /usr/local/bin/$(BIN)
 
 #----------------------------------------------------------------
 
