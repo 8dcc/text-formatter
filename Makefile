@@ -1,6 +1,6 @@
 
 CC=gcc
-CFLAGS=-Wall -Wextra
+CFLAGS=-Wall -Wextra -O3
 BIN=text-formatter
 
 .PHONY: all run clean install uninstall
