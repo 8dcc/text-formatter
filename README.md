@@ -1,2 +1,2 @@
 # text-formatter
-Formats words to the N column of a text
+**Formats words to the N column of a text**
