@@ -106,7 +106,7 @@ int main(int argc, char** argv) {
             /* Once reach a space, put the previous one or a newline if we have
              * space. Then put the word. < because we don't count the space after
              * the word as the word length */
-            if (line_p < max_col) {
+            if (line_p <= max_col) {
                 if (last_space != 0)
                     putc(last_space, stdout);
 
