@@ -2,22 +2,24 @@
 **Formats words to the N column of a text**
 
 ### Example
-Using `text-formatter -c 85 -f test/test2.txt`, it move to the next line all the
-words that are past the column 85 of the file test/test2.txt.
+Using `text-formatter -c 50 -f test/test2.txt`, it move to the next line all the
+words that are past the column 50 of the file test/test2.txt.
 ```bash
 # Original
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facile est hoc cernere et primis puerorum aetatulis.
-At iam decimum annum et spelunca iacet. Duo Reges: constructio interrete. Itaque ad tempus ad Pisonem omnes.
-Paupertas malum est, mendicus beatus esse nemo potest, quamvis sit sapiens. Affectus, orbus.
-                                                                                     ^ !!!!!!!!!!!!!!!!!!!! ^
-                                                                             col 85 ^
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facile est
+hoc cernere et primis puerorum aetatulis.
+Paupertas malum est, mendicus beatus esse nemo potest, quamvis sit sapiens.
+Affectus, orbus.
+                                                  ^ !!!!!!!!!!!!!!!!!!!!! ^
+                                          col 50 ^
 
 # Final
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facile est hoc cernere et
-primis puerorum aetatulis. At iam decimum annum et spelunca iacet. Duo Reges:
-constructio interrete. Itaque ad tempus ad Pisonem omnes. Paupertas si malum est,
-mendicus beatus esse nemo potest, quamvis sit sapiens. Morbo gravissimo affectus, ex,
-orbus.
+Lorem ipsum dolor sit amet, consectetur adipiscing
+elit. Facile est
+hoc cernere et primis puerorum aetatulis.
+Paupertas malum est, mendicus beatus esse nemo
+potest, quamvis sit sapiens.
+Affectus, orbus.
 ```
 *Note that with `-c 85` (Which is the default) it will admit words whose last
 character is less **or equal** than 85.*
